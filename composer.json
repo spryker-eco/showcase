@@ -1,0 +1,23 @@
+{
+    "name": "spryker-eco/showcase",
+    "description": "Showcase for 3rd party vendor namespace'd bundles",
+    "require": {
+        "spryker/kernel": "^2.0.0"
+    },
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "SprykerEco\\Zed\\Showcase\\": "src/SprykerEco/Zed/Showcase/"
+        }
+    }
+}
