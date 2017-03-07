@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <showcase>
+        <label>Showcase</label>
+        <title>Showcase</title>
+        <bundle>Showcase</bundle>
+        <icon>fa-files-o</icon>
+        <pages>
+            <showcase>
+                <label>DummyItem</label>
+                <title>DummyItem</title>
+                <bundle>showcase</bundle>
+                <controller>index</controller>
+                <action>index</action>
+                <icon>fa-file-o</icon>
+            </showcase>
+        </pages>
+    </showcase>
+</config>
