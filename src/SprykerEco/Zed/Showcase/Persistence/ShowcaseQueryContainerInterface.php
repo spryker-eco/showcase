@@ -6,13 +6,15 @@
 
 namespace SprykerEco\Zed\Showcase\Persistence;
 
+use Orm\Zed\Showcase\Persistence\Base\SpyShowcaseDummyQuery;
+
 interface ShowcaseQueryContainerInterface
 {
 
     /**
-     * @param $id
+     * @param int $idDummy
      *
-     * @return mixed
+     * @return SpyShowcaseDummyQuery
      */
-    public function queryDummyItem($id);
+    public function queryDummyItem($idDummy);
 }

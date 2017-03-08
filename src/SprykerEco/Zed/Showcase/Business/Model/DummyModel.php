@@ -8,17 +8,24 @@
 namespace SprykerEco\Zed\Showcase\Business\Model;
 
 use Generated\Shared\Transfer\ShowcaseDummyTransfer;
+use Orm\Zed\Showcase\Persistence\SpyShowcaseDummy;
 
 class DummyModel
 {
 
     /**
+     * @param ShowcaseDummyTransfer $showcaseDummyTransfer
+     *
      * @return ShowcaseDummyTransfer
      */
     public function saveDummyItem(ShowcaseDummyTransfer $showcaseDummyTransfer)
     {
-        return $showcaseDummyTransfer
-            ->setIdShowcaseDummy(1)
-            ->setShowcaseName('FromFacade');
+        $showcaseEntity = new SpyShowcaseDummy();
+        $showcaseEntity->setName($showcaseDummyTransfer->getShowcaseName());
+        $showcaseEntity->save();
+
+        $showcaseDummyTransfer->setIdShowcaseDummy($showcaseEntity->getIdDummy());
+
+        return $showcaseDummyTransfer;
     }
 }

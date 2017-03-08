@@ -7,9 +7,17 @@
 
 namespace SprykerEco\Zed\Showcase\Persistence;
 
+use Orm\Zed\Showcase\Persistence\Base\SpyShowcaseDummyQuery;
 use Spryker\Zed\Kernel\Persistence\AbstractPersistenceFactory;
 
 class ShowcasePersistenceFactory extends AbstractPersistenceFactory
 {
 
+    /**
+     * @return \Orm\Zed\Showcase\Persistence\SpyShowcaseDummyQuery
+     */
+    public function createSpyShowcaseDummyQuery()
+    {
+        return SpyShowcaseDummyQuery::create();
+    }
 }

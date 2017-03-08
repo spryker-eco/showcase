@@ -6,21 +6,23 @@
 
 namespace SprykerEco\Zed\Showcase\Persistence;
 
-use Generated\Shared\Transfer\ShowcaseDummyTransfer;
 use Spryker\Zed\Kernel\Persistence\AbstractQueryContainer;
 
+/**
+ * @method ShowcasePersistenceFactory getFactory()
+ */
 class ShowcaseQueryContainer extends AbstractQueryContainer implements ShowcaseQueryContainerInterface
 {
 
     /**
-     * @param $id
+     * @param int $idDummy
      *
-     * @return mixed
+     * @return \Orm\Zed\Showcase\Persistence\SpyShowcaseDummyQuery
      */
-    public function queryDummyItem($id)
+    public function queryDummyItem($idDummy)
     {
-        return (new ShowcaseDummyTransfer())
-            ->setIdShowcaseDummy(1)
-            ->setShowcaseName('FromQueryContainer');
+        return $this->getFactory()
+            ->createSpyShowcaseDummyQuery()
+            ->filterByIdDummy($idDummy);
     }
 }
