@@ -1,0 +1,4 @@
+showcase.dummy.item:
+  translations:
+    en_US: 'Showcase Dummy Item'
+    de_DE: 'Schaufenster Dummy Artikel'
