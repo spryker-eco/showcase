@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerEco\Zed\Showcase\Communication\Controller;
+namespace SprykerEco\Zed\ShowcaseEN\Communication\Controller;
 
 use Spryker\Zed\Kernel\Communication\Controller\AbstractController;
 
@@ -21,5 +21,5 @@ class IndexController extends AbstractController
             'controller' => get_class($this),
         ]);
     }
-  
+
 }

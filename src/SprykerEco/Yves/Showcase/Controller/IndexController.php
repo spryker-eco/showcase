@@ -5,9 +5,9 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerEco\Zed\Showcase\Communication\Controller;
+namespace SprykerEco\Yves\Showcase\Controller;
 
-use Spryker\Zed\Kernel\Communication\Controller\AbstractController;
+use Spryker\Yves\Kernel\Controller\AbstractController;
 
 class IndexController extends AbstractController
 {
@@ -17,9 +17,8 @@ class IndexController extends AbstractController
      */
     public function indexAction()
     {
-        return $this->viewResponse([
-            'controller' => get_class($this),
-        ]);
+        return [
+            'data' => 'dummyData'
+        ];
     }
-  
 }
