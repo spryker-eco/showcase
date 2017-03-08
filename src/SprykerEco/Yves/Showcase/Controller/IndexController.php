@@ -8,17 +8,14 @@
 namespace SprykerEco\Yves\Showcase\Controller;
 
 use Spryker\Yves\Kernel\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 
-class ShowcaseController extends AbstractController
+class IndexController extends AbstractController
 {
 
     /**
-     * @param Request $request
-     *
      * @return array
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
         return [
             'data' => 'dummyData'
