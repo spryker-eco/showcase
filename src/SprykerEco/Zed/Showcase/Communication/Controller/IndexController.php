@@ -21,5 +21,5 @@ class IndexController extends AbstractController
             'controller' => get_class($this),
         ]);
     }
-  
+
 }
