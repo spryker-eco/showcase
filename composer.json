@@ -2,7 +2,6 @@
     "name": "spryker-eco/showcase",
     "description": "Showcase for 3rd party vendor namespace'd bundles",
     "require": {
-        "spryker/kernel": "^3.0.0"
     },
     "minimum-stability": "dev",
     "license": "proprietary",
