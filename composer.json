@@ -16,12 +16,8 @@
         "sort-packages": true
     },
     "autoload": {
-        "psr-4": {
-            "SprykerEco\\Zed\\Showcase\\": "src/SprykerEco/Zed/Showcase/",
-            "SprykerEco\\Yves\\Showcase\\": "src/SprykerEco/Yves/Showcase/",
-            "SprykerEco\\Client\\Showcase\\": "src/SprykerEco/Client/Showcase/",
-            "SprykerEco\\Service\\Showcase\\": "src/SprykerEco/Service/Showcase/",
-            "SprykerEco\\Shared\\Showcase\\": "src/SprykerEco/Shared/Showcase/"
+        "psr-0": {
+            "SprykerEco": "src/"
         }
     },
     "repositories": [

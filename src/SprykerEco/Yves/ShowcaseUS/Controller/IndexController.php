@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerEco\Yves\Showcase\Controller;
+namespace SprykerEco\Yves\ShowcaseUS\Controller;
 
 use Spryker\Yves\Kernel\Controller\AbstractController;
 
